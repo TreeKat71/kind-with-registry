@@ -418,12 +418,4 @@ nodes:
         hostPort: 30699
         listenAddress: "0.0.0.0"
         protocol: tcp
-      - containerPort: 32000
-        hostPort: 32000
-        listenAddress: "0.0.0.0" 
-        protocol: tcp 
-      - containerPort: 32666
-        hostPort: 32666
-        listenAddress: "0.0.0.0"
-        protocol: tcp
   - role: worker
