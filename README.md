@@ -32,3 +32,9 @@ $ kind create cluster --config=config.yaml
 ```bash
 $ sh kind-with-registry.sh
 ```
+
+## How to use
+1. If you want to use this cluster remotely, then copy the content of config under ~/.kube and fill them to your ~/.kube/config
+2. The NodePort service will be lauched from port 30600~30699, you can adjust the port range on your own if needed.
+
+Feel free to ask any questions
