@@ -1,4 +1,4 @@
-## Install kubectl
+## Download kubectl
 
 ```bash
 $ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
@@ -6,7 +6,7 @@ $ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/sta
 # Then move it to the $PATH
 ```
 
-## Install kind binary
+## Download kind binary
 ```bash
 $ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.10.0/kind-linux-amd64
 
