@@ -8,7 +8,7 @@ $ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/sta
 
 ## Download kind binary
 ```bash
-$ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.10.0/kind-linux-amd64
+$ curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.11.0/kind-linux-amd64
 
 $ chmod +x ./kind
 
