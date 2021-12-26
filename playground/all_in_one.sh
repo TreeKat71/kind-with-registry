@@ -11,3 +11,8 @@ sh sandbox-k8s-with-kind/gen_config.sh \
 kind create cluster --config=config.yaml
 mkdir -p $HOME/.kube
 kind get kubeconfig > $HOME/.kube/config
+
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+echo "alias k=kubectl" >> ~/.bashrc
+echo "complete -F __start_kubectl k" >> ~/.bashrc
+source ~/.bashrc
