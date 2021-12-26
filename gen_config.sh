@@ -1,6 +1,7 @@
 IP=$1
 NODEPORT_START="${2:-30000}"
 NODEPORT_END="${3:-32767}"
+WORKER_NUM="${WORKER_NUM:-1}"
 
 cat  << EOF
 kind: Cluster
@@ -15,7 +16,6 @@ networking:
   apiServerAddress: "$IP"
   apiServerPort: 6444
 nodes:
-  - role: worker
   - role: control-plane
     extraPortMappings:
 EOF
@@ -29,3 +29,9 @@ cat  << EOF
 EOF
 done
 
+for port in $(seq 1 $WORKER_NUM)
+do
+cat  << EOF
+  - role: worker
+EOF
+done
